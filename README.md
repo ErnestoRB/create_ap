@@ -60,6 +60,10 @@ This project is no longer maintained.
     emerge net-wireless/create_ap
 
 ## Examples
+
+### Reservation of IP for MAC-Addresses (NAT):
+create_ap --ip_reservation 'aa:bb:cc:dd:ee:ff,192.168.1.10;ff:ee:dd:cc:bb:aa,10.0.0.2' wlan0 eth0 MyAccessPoint MyPassPhrase
+
 ### No passphrase (open network):
     create_ap wlan0 eth0 MyAccessPoint
 
